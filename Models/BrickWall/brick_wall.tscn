@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bde6pgiek8s5g"]
+
+[ext_resource type="PackedScene" uid="uid://cncqanycddrr8" path="res://Models/BrickWall/brick-wall.glb" id="1_y4os2"]
+[ext_resource type="Material" uid="uid://ts8g51oado0a" path="res://Models/BrickWall/new_standard_material_3d.tres" id="2_1fa45"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hh112"]
+points = PackedVector3Array(0.5, 0.701914, -0.342923, 0.446554, 0.470645, -0.327013, 0.5, 0.0899379, -0.32, 0.5, 0.701914, -0.477095, -0.5, 0.701914, -0.342923, 0.305599, 0.470645, -0.327013, 0.5, 0, -0.32, -0.5, 0.0899379, -0.32, 0.5, 0.0899379, -0.5, -0.0802662, 0.518534, -0.493005, -0.5, 0.701914, -0.477095, -0.29444, 0.370676, -0.327013, 0.5, 0, -0.5, -0.5, 0, -0.32, -0.5, 0.0899379, -0.5, -0.221124, 0.518534, -0.493005, -0.5, 0, -0.5)
+
+[node name="brick-wall" instance=ExtResource("1_y4os2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.425851)
+
+[node name="brick-wall2" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_1fa45")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+shape = SubResource("ConvexPolygonShape3D_hh112")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.322931, -0.4)
+use_collision = true
+size = Vector3(1, 0.629963, 0.002)

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://fst7lpimbcs8"]
+
+[ext_resource type="PackedScene" uid="uid://cyowoyc5qq6mo" path="res://Models/Graves/gravestone-bevel.glb" id="1_hpaxd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0krf1"]
+albedo_color = Color(0.584314, 0.556863, 0.52549, 1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dr4y8"]
+points = PackedVector3Array(-0.22, 0, -0.09975, -0.22, 0, 0.09975, -0.22, 0.0779475, -0.09975, 0.22, 0, -0.09975, 0.22, 0, 0.09975, -0.22, 0.0779475, 0.09975, 0.22, 0.0779475, -0.09975, -0.19502, 0.436449, -0.0747539, -0.170039, 0.461483, -0.0747539, -0.0599099, 0.565205, -0.0747539, 0, 0.581249, -0.0747539, 0.22, 0.0779475, 0.09975, 0, 0.581249, 0.0747344, -0.0599099, 0.565205, 0.0747344, -0.170039, 0.461483, 0.0747344, -0.19502, 0.436449, 0.0747344, 0.0598669, 0.565205, -0.0747539, 0.169996, 0.461483, -0.0747539, 0.194976, 0.436449, -0.0747539, 0.194976, 0.436449, 0.0747344, 0.169996, 0.461483, 0.0747344, 0.0598669, 0.565205, 0.0747344)
+
+[node name="gravestone-bevel" instance=ExtResource("1_hpaxd")]
+
+[node name="gravestone-bevel2" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_0krf1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+shape = SubResource("ConvexPolygonShape3D_dr4y8")
