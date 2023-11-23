@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn3hcnmn8kpon"]
+
+[ext_resource type="PackedScene" uid="uid://frd1vkj1by12" path="res://Models/Stall/blade.glb" id="1_jbhsr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y35c4"]
+albedo_color = Color(0.219608, 0.54902, 0.294118, 1)
+
+[node name="blade" instance=ExtResource("1_jbhsr")]
+
+[node name="blade2" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_y35c4")

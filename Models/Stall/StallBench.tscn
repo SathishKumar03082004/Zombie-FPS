@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://chvte5y1c00da"]
+
+[ext_resource type="PackedScene" uid="uid://dplolag1p6g0x" path="res://Models/Stall/stall.glb" id="1_oml4i"]
+[ext_resource type="PackedScene" uid="uid://f1tfhu47ybyf" path="res://Models/Stall/stallBench.glb" id="2_xglbt"]
+
+[node name="stall" instance=ExtResource("1_oml4i")]
+
+[node name="stallBench" parent="." index="1" instance=ExtResource("2_xglbt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0, 0)
+
+[node name="stallBench2" parent="." index="2" instance=ExtResource("2_xglbt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0, 0)

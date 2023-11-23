@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqbi2isptivxl"]
+
+[ext_resource type="PackedScene" uid="uid://df3totfti4wa3" path="res://Models/Graves/gravestone-cross-large.glb" id="1_dut1l"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bj8xk"]
+albedo_color = Color(0.45098, 0.576471, 0.701961, 1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_8da8k"]
+points = PackedVector3Array(-0.220769, 0, -0.145632, -0.220769, 0, 0.145632, -0.220769, 0.0782551, -0.145632, 0.220769, 0, -0.145632, 0.220769, 0, 0.145632, -0.220769, 0.0782551, 0.145632, 0.220769, 0.0782551, -0.145632, -0.17824, 0.798257, -0.0250038, -0.0645278, 0.938326, -0.035011, 0.220769, 0.0782551, 0.145632, -0.0645278, 0.938326, 0.0349825, -0.17824, 0.798257, 0.0249753, 0.0644846, 0.938326, -0.035011, 0.178197, 0.798257, -0.0250038, 0.178197, 0.798257, 0.0249753, 0.0644846, 0.938326, 0.0349825)
+
+[node name="gravestone-cross-large" instance=ExtResource("1_dut1l")]
+
+[node name="gravestone-cross-large2" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_bj8xk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+shape = SubResource("ConvexPolygonShape3D_8da8k")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.422544, 0)
+use_collision = true
+size = Vector3(0.126, 0.85, 0.027)

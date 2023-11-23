@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://djkwagfr11qbb"]
+
+[ext_resource type="PackedScene" uid="uid://8bxgjf3op05b" path="res://Models/Graves/coffin.glb" id="1_e28fq"]
+
+[node name="coffin" instance=ExtResource("1_e28fq")]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.132379, 0)
+use_collision = true
+size = Vector3(0.263, 0.2, 0.849)

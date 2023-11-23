@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ew50ei577y8c"]
+
+[ext_resource type="PackedScene" uid="uid://baso3vjkbjwqh" path="res://Models/Graves/gravestone-cross.glb" id="1_otoie"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qt0xv"]
+points = PackedVector3Array(-0.220769, 0, -0.145632, -0.220769, 0, 0.145632, -0.220769, 0.118265, -0.145632, 0.220726, 0, -0.145632, 0.220726, 0, 0.145632, -0.220769, 0.118265, 0.145632, 0.220726, 0.118265, -0.145632, -0.118985, 0.879892, -0.0307629, -0.0512592, 0.954345, -0.0307629, 0.220726, 0.118265, 0.145632, -0.0512592, 0.954345, 0.0307344, -0.118985, 0.879892, 0.0307344, 0.051216, 0.954345, -0.0307629, 0.118942, 0.879892, -0.0307629, 0.118942, 0.879892, 0.0307344, 0.051216, 0.954345, 0.0307344)
+
+[node name="gravestone-cross" instance=ExtResource("1_otoie")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+shape = SubResource("ConvexPolygonShape3D_qt0xv")
