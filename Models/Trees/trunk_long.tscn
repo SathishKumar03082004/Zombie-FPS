@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://dda5beer6fycx"]
-
-[ext_resource type="PackedScene" uid="uid://b0qhrci7j34bu" path="res://Models/Trees/trunkLong.glb" id="1_6kd54"]
-
-[node name="trunkLong" instance=ExtResource("1_6kd54")]
