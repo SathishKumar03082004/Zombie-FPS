@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://deugevmwmtsi3"]
+
+[ext_resource type="PackedScene" uid="uid://b8jmcgabbusmr" path="res://Models/WoodFence/fence.glb" id="1_w1stu"]
+
+[node name="fence" instance=ExtResource("1_w1stu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.46195, 0, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.47435, 0.258726, 0)
+use_collision = true
+size = Vector3(0.002, 0.002, 1)
