@@ -2,7 +2,9 @@
 
 ## Description
 
-This is a first-person shooter (FPS) game with a zombie theme. Survive waves of zombies and complete objectives to win the game.
+## Description
+
+This is a first-person shooter (FPS) game set in a graveyard infested with an infinite horde of zombies. Survive the relentless waves of the undead and complete objectives to emerge victorious in the game.
 
 ## Features
 
@@ -14,8 +16,7 @@ This is a first-person shooter (FPS) game with a zombie theme. Survive waves of 
 
 ### Prerequisites
 
-- Godot Engine (version x.x.x)
-- Your additional dependencies...
+- Godot Engine (version 4.2.1)
 
 ### Installing Godot Engine
 
