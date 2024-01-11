@@ -50,12 +50,6 @@ This is a first-person shooter (FPS) game set in a graveyard infested with an in
 - D: Move Right
 - Left Mouse Button: Shoot
 
-### Installation
-
-1. Clone the repository: `git clone https://github.com/SathishKumar03082004/ZombieFPS.git`
-2. Open the project in Unity.
-3. Configure your settings...
-
 ## Screenshots
 
 ![Screenshot 1](/screenshots/screenshot1.png)
