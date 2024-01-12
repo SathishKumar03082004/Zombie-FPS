@@ -55,10 +55,6 @@ This is a first-person shooter (FPS) game set in a graveyard infested with an in
 ![Screenshot 1](/screenshots/screenshot1.png)
 ![Screenshot 2](/screenshots/screenshot2.png)
 
-## Contributing
-
-Contributions are welcome! Please follow our [contribution guidelines](CONTRIBUTING.md).
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
