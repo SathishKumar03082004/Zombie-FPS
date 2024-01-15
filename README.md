@@ -2,8 +2,6 @@
 
 ## Description
 
-## Description
-
 This is a first-person shooter (FPS) game set in a graveyard infested with an infinite horde of zombies. Survive the relentless waves of the undead and complete objectives to emerge victorious in the game.
 
 ## Features
